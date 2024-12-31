@@ -1,5 +1,5 @@
 def prime_factor(number)
-	arr = []
+	arr = Set.new
 	for i in 2..number do
 		while number % i == 0
 			number = number / i
@@ -7,7 +7,7 @@ def prime_factor(number)
 		end
 		i += 1
 	end
-	arr
+	arr.to_a
 end
 
 def all_factors(number)
