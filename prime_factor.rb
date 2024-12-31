@@ -1,4 +1,4 @@
-def prime_factor(number)
+def prime_factors(number)
 	arr = Set.new
 	for i in 2..number do
 		while number % i == 0
