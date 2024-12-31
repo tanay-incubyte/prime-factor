@@ -13,9 +13,12 @@ RSpec.describe 'Factors of a number' do
       expect(prime_factor(2)).to eq([2])     
       expect(prime_factor(6)).to eq([2, 3]) 
       expect(prime_factor(15)).to eq([3, 5])
+      expect(prime_factor(17)).to eq([17])
       expect(prime_factor(30)).to eq([2, 3, 5])
       expect(prime_factor(100)).to eq([2, 5])
-      expect(prime_factor(555)).to eq([5, 7, 37])
+      expect(prime_factor(555)).to eq([3, 5, 37])
+      expect(prime_factor(2457)).to eq([3, 7, 13])
+      expect(prime_factor(30030)).to eq([2, 3, 5, 7, 11, 13])
     end
   end
 end
