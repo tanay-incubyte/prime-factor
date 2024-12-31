@@ -5,3 +5,7 @@ def prime_factor(number)
 	end
 	arr
 end
+
+def all_factors(number)
+  (1..number).select { |i| number % i == 0 }
+end
