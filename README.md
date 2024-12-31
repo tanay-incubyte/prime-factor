@@ -1,4 +1,4 @@
-# Prime Factor and All Factors Program
+# Prime Factors and All Factors Program
 
 ## Features
 
@@ -37,5 +37,5 @@ To compute the all factors of a number, run in ruby console:
 ```ruby
 require_relative 'prime_factor'
 
-puts all_factor(30)   # Output: [1, 2, 3, 5, 6, 10, 15, 30]
+puts all_factors(30)   # Output: [1, 2, 3, 5, 6, 10, 15, 30]
 ```
