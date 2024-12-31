@@ -1,7 +1,11 @@
 def prime_factor(number)
 	arr = []
-	for i in 1..number do
-		arr << i if number % i == 0
+	for i in 2..number do
+		while number % i == 0
+			number = number / i
+			arr << i 		
+		end
+		i += 1
 	end
 	arr
 end
