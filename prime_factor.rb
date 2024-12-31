@@ -1,3 +1,7 @@
 def prime_factor(number)
-	2
+	arr = []
+	for i in 1..number do
+		arr << i if number % i == 0
+	end
+	arr
 end
