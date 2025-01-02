@@ -1,13 +1,15 @@
-def prime_factors(number)
-	arr = Set.new
-	for i in 2..number do
-		while number % i == 0
-			number = number / i
-			arr << i 		
-		end
-		i += 1
+def prime_factors(number, divisor = 2, factors = Set.new)
+	return factors.to_a if number < 2 # no factors for numbers less than 2	
+
+	if number % divisor == 0
+		# add in set only if it is a factor
+		factors.add(divisor)
+		# divide the number by the divisor until it is no longer divisible
+		prime_factors(number / divisor, divisor, factors)
+	else
+		# check for next possible number
+		prime_factors(number, divisor + 1, factors)
 	end
-	arr.to_a
 end
 
 def all_factors(number)
